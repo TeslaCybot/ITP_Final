@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed-Tech Platform - Learn Without Limits</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+        
+        header { background: #005a87; color: #ffffff; padding: 20px 0; }
+        header h1 { text-align: center; font-size: 2.5rem; }
+
+        .section { padding: 60px 0; }
+        .section h2 { color: #005a87; font-size: 2.2rem; margin-bottom: 10px; text-align: center; }
+        .section p { font-size: 1.1rem; margin-bottom: 20px; text-align: justify; }
+        .section.features { background-color: #e8f4fa; }
+        .section.pricing { background-color: #ffffff; }
+        .section.connect { background-color: #005a87; color: #ffffff; }
+        .section.connect p { color: #dddddd; }
+        
+        .features-grid, .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .features-grid > div, .pricing-grid > div { background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); }
+        .pricing-grid > div { text-align: center; }
+        .pricing-grid h3 { color: #005a87; margin: 15px 0; }
+        .pricing-grid p { margin-bottom: 25px; }
+        .pricing-grid button { background: #00a8e8; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .pricing-grid button:hover { background: #008db9; }
+
+        footer { background: #333; color: #ffffff; text-align: center; padding: 20px 0; font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .features-grid, .pricing-grid { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+            .section h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EduTech - Future of Learning</h1>
+        </div>
+    </header>
+
+    <section id="introduction" class="section">
+        <div class="container">
+            <h2>Welcome to EduTech</h2>
+            <p>Discover a new horizon of learning with our state-of-the-art educational platform, crafted to empower both learners and educators.</p>
+        </div>
+    </section>
+
+    <section id="problem" class="section features">
+        <div class="container">
+            <h2>Challenges in Education</h2>
+            <p>Addressing the gap in quality education with personalized learning experiences and interactive content that resonates with every student.</p>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div>
+                    <h3>Interactive Courses</h3>
+                    <p>Engage with courses designed for real-world applications, providing a hands-on approach to learning.</p>
+                </div>
+                <div>
+                    <h3>Collaborative Learning</h3>
+                    <p>Collaborate in real-time with peers and mentors, enhancing the educational journey.</p>
+                </div>
+                <div>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your learning progress with our intuitive dashboard that keeps you motivated and on track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <h2>Flexible Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div>
+                    <h3>Starter</h3>
+                    <p>Access to all basic courses and community forums.</p>
+                    <button>Choose Starter</button>
+                </div>
+                <div>
+                    <h3>Pro</h3>
+                    <p>Everything in Starter plus premium courses and tools.</p>
+                    <button>Choose Pro</button>
+                </div>
+                <div>
+                    <h3>Ultimate</h3>
+                    <p>All Pro features plus one-on-one mentoring sessions.</p>
+                    <button>Choose Ultimate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect" class="section connect">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Connect with us to learn more about our platform and how it can transform your learning experience.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2023 EduTech. Innovate. Learn. Grow.
+        </div>
+    </footer>
+</body>
+</html>
